@@ -13,3 +13,6 @@ chat = gets.chomp
 		puts 'HIO ILIKUWA 1904'
 	end
 end
+
+
+
