@@ -1,7 +1,12 @@
 #Enter name.
 #puts "Please Enter name"
 
-name = ["Mercy", "Mancini", "Ian", "Wicky", "Jane", "Mose", "Sharon", "Carol", "Clive", "Peter"]
+name = []
+input = ""
+until input == "end"
+	input = gets.chomp
+	name.push input unless input == "end"
+end
 
 puts "The sorted list is as follows:"
 
