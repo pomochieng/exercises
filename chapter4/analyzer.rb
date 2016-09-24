@@ -1,3 +1,5 @@
+
+#count lines
 text = ""
 line_count = 0
 File.open("text.txt").each do |line|
@@ -11,9 +13,16 @@ text = lines.join
 puts "#{line_count} lines"
 
 #counting Characters
-total_characters = text_length
-puts "#{total_characters} characters"
+#total_characters = text.length
+#puts "#{total_characters} characters"
 
-total_characters_nospaces = text.gsub(/\s+/, '').length
+#Count Characters without white spaces
+#total_characters_nospaces = text.gsub(/\s+/, '').length
+#puts "#{total_characters_nospaces} characters (excluding spaces)"
 
-puts "#{total_characters_nospaces} characters excluding spaces"
+
+#Counting Words
+#word_count = text.split.length
+#puts "#{word_count} words"
+
+
