@@ -22,7 +22,7 @@ puts "#{total_characters_nospaces} characters (excluding spaces)"
 
 
 #Counting Words
-#word_count = text.split.length
-#puts "#{word_count} words"
+word_count = text.split.length
+puts "#{word_count} words"
 
 
