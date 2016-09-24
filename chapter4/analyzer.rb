@@ -17,8 +17,8 @@ total_characters = text.length
 puts "#{total_characters} characters"
 
 #Count Characters without white spaces
-#total_characters_nospaces = text.gsub(/\s+/, '').length
-#puts "#{total_characters_nospaces} characters (excluding spaces)"
+total_characters_nospaces = text.gsub(/\s+/, '').length
+puts "#{total_characters_nospaces} characters (excluding spaces)"
 
 
 #Counting Words
