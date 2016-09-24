@@ -30,8 +30,15 @@ paragraph_count = text.split(/\n\n/).length
 puts "#{paragraph_count} Paragraphs"
 
 
-sentences_count = text.split(/\.|\?|!/).length
-puts "#{sentences_count} Sentences"
+sentence_count = text.split(/\.|\?|!/).length
+puts "#{sentence_count} Sentences"
+
+#Calculating Averges
+
+puts "#{sentence_count / paragraph_count} Sentences per paragraph (average)"
+puts "#{word_count / sentence_count} words per sentence (average)"
+
+
 
 
 
