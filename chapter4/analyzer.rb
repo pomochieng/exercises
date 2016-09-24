@@ -25,4 +25,13 @@ puts "#{total_characters_nospaces} characters (excluding spaces)"
 word_count = text.split.length
 puts "#{word_count} words"
 
+#Counting Sentences and Paragraphs.
+paragraph_count = text.split(/\n\n/).length
+puts "#{paragraph_count} Paragraphs"
+
+
+sentences_count = text.split(/\.|\?|!/).length
+puts "#{sentences_count} Sentences"
+
+
 
