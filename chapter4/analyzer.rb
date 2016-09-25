@@ -45,7 +45,17 @@ all_words = text.scan(/\w+/)
 good_words = all_words.reject{ |word| stopwords.include?(word) }
 #aganist all words
 good_percentage = ((good_words.length.to_f / all_words.length.to_f) * 100).to_i
+
 puts "#{good_percentage}% of words are non-fluff words"
 
+#Summarize text
+sentences = text.gsub(/\s+/, ' ').strip.split(/\.|\?|!/)
+sentences_sorted = sentences.sort_by { |sentence| sentence.length }
+one_third = sentences_sorted.length / 3
+ideal_sentences = sentences_sorted.slice(one_third, one_third + 1)
+ideal_sentences = ideal_sentences.select { |sentence| sentence =~ /is|are/ }
+
+puts "Summary:\n\n" + ideal_sentences.join(". ")
+puts "-- End of analysis"
 
 
