@@ -23,4 +23,11 @@ sparky.speak("Arf!")
 bob = HumanBeing.new
 bob.speak("Hello!")
 
+puts "---GoodDog ancestors---"
+puts GoodDog.ancestors
+puts ''
+puts "---HumanBeing ancestors---"
+puts HumanBeing.ancestors
+
+
 
